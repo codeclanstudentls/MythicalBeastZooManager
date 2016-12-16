@@ -56,6 +56,12 @@ public class Animal {
         this.species_name = species_name;
     }
 
+    public void feedAnimal(){
+        // how am I going to lower these levels without hard coding stuff?
+        this.food_level = food_level + 10.00;
+
+    }
+
 
 
 

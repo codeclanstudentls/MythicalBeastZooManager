@@ -34,4 +34,10 @@ public class EnclosureTest {
         enclosure1.addAnimalToCage(animal);
         assertEquals(1, enclosure1.getNumberOfAnimalsInEnclosure());
     }
+
+    @Test
+    public void canRemoveAnimalFromEnclosureByObjectTest(){
+
+        assertEquals("Nessie", animal.removeAnimalFromEnclosureByObject());
+    }
 }

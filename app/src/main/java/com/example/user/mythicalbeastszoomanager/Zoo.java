@@ -16,18 +16,22 @@ public class Zoo {
     }
 
     public String getName(){
+
         return name;
     }
 
     public void setName(String name){
+
         this.name = name;
     }
 
     public void addEnclosureToZoo(Enclosure enclosure){
+
         enclosures.add(enclosure);
     }
 
     public int getNumberOfEnclosuresInZoo(){
+
         return enclosures.size();
     }
 

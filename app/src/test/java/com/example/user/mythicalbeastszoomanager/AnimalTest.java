@@ -22,26 +22,31 @@ public class AnimalTest{
 
     @Test
     public void canGetNameTest(){
+
         assertEquals("Chicketty", animal1.getName());
     }
 
     @Test
     public void canGetAgeTest(){
+
         assertEquals(5, animal1.getAge());
     }
 
     @Test
     public void canGetFoodLevelTest(){
+
         assertEquals(100.00, 0.01, animal1.getFood_level());
     }
 
     @Test
     public void canGetPoopLevel(){
+
         assertEquals(0.01, 0.01, animal1.getPoop_level());
     }
 
     @Test
     public void canGetSpeciesNameTest() {
+
         assertEquals("Chocobo", animal1.getSpeciesName());
     }
 

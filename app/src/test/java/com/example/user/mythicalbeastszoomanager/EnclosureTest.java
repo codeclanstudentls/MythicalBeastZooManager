@@ -20,13 +20,18 @@ public class EnclosureTest {
         animal = new Animal("Nessie", 10000000, 90.00, 10.00, "Loch Monster");
         enclosure1 = new Enclosure("Aquarium", new ArrayList<Animal>());
 
-
     }
 
     @Test
     public void enclosureHasNameTest(){
             assertEquals("Aquarium", enclosure1.getName());
 
+    }
+
+    @Test
+    public void canSetEnclosureNameTest(){
+        enclosure1.setName("Aquarium");
+        assertEquals("Aquarium", enclosure1.getName());
     }
 
     @Test

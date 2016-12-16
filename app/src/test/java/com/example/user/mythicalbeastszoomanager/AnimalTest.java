@@ -16,13 +16,13 @@ public class AnimalTest{
     @Before
     public void before(){
 
-        animal1 = new Animal("Chocobo", 5, 100.00);
-        animal2 = new Animal("Tribble", 1, 90.00);
+        animal1 = new Animal("Chicketty", 5, 100.00, 0.00, "Chocobo");
+        animal2 = new Animal("Nessie", 10000000, 90.00, 10.00, "Loch Monster");
     }
 
     @Test
     public void canGetNameTest(){
-        assertEquals("Chocobo", animal1.getName());
+        assertEquals("Chicketty", animal1.getName());
     }
 
     @Test
@@ -36,15 +36,31 @@ public class AnimalTest{
     }
 
     @Test
-    public void canSetNameTest(){
-        animal1.setName("Chocobo");
-        assertEquals("Chocobo", animal1.getName());
+    public void canGetPoopLevel(){
+        assertEquals(0.01, 0.01, animal1.getPoop_level());
     }
 
     @Test
-    public void canSetAge(){
+    public void canGetSpeciesNameTest() {
+        assertEquals("Chocobo", animal1.getSpeciesName());
+    }
+
+    @Test
+    public void canSetNameTest(){
+        animal1.setName("Chicketty");
+        assertEquals("Chicketty", animal1.getName());
+    }
+
+    @Test
+    public void canSetAgeTest(){
         animal1.setAge(5);
         assertEquals(5, animal1.getAge());
+    }
+
+    @Test
+    public void canSetSpeciesNameTest(){
+        animal1.setSpeciesName("Chocobo");
+        assertEquals("Chocobo", animal1.getSpeciesName());
     }
 
 }

@@ -39,23 +39,6 @@ public class Enclosure {
         // Also this means all animals will be 'lost'.
     }
 
-    // need to be careful to use the correct method to remove from an arraylist as I think it effects the indexing?
-    //     Jarrod has suggested using a remove by object method on the arraylist of animal objects but not sure how to do this
-
-//      e.g. public boolean remove(Object o)
-
-//      public boolean removeAnAnimalFromEnclosure(Object animal1) {
-
-//
-//    }
-//
-//    public boolean equals(Object obj){
-//        if (obj == null) return false;
-//        if (obj == this) return true;
-//        if (!(obj instanceof Animal)) return false;
-//        Animal animal1 = (Animal) obj;
-//        return animal1.i == this.i;
-//    }
 
     public String removeAnimalFromEnclosureByObject (String name){
 
@@ -65,6 +48,7 @@ public class Enclosure {
                 animals.remove(animal);
                 return String.format(name + " was removed");
             }
+
         }return null;
     }
 

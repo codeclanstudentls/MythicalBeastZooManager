@@ -13,7 +13,7 @@ public class Enclosure {
 
     public Enclosure(String name, ArrayList<Animal> animals){
         this.name = name;
-        this.animals = new ArrayList<Animal>();
+        this.animals = animals;
     }
 
     public String getName(){
@@ -30,6 +30,15 @@ public class Enclosure {
 
     public int getNumberOfAnimalsInEnclosure(){
         return animals.size();
+    }
+
+    public void removeAllAnimalsFromEnclosure(){
+        animals.remove(animals);
+        // This only removes all Animals.  Need to be more selective and have them removed by index value
+    }
+
+    public void removeAnimalFromEnclosure() {
+        // need to be careful to use the correct method to remove from an arraylist as I think it effects the indexing?
     }
 
 }

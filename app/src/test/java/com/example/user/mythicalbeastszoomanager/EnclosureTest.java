@@ -18,6 +18,7 @@ public class EnclosureTest {
     public void before(){
 
         animal = new Animal("Nessie", 10000000, 90.00, 10.00, "Loch Monster");
+        enclosure1 = new Enclosure("Aquarium", new ArrayList<Animal>());
 
 
     }
@@ -31,6 +32,6 @@ public class EnclosureTest {
     @Test
     public void canAddAnimalToEnclosureTest(){
         enclosure1.addAnimalToCage(animal);
-        assertEquals(0, enclosure1.add());
+        assertEquals(1, enclosure1.getNumberOfAnimalsInEnclosure());
     }
 }

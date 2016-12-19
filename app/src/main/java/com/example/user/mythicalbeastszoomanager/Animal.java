@@ -3,20 +3,19 @@ package com.example.user.mythicalbeastszoomanager;
 /**
  * Created by user on 16/12/2016.
  */
-public class Animal {
+public abstract class Animal {
 
     private String name;
+    private String species;
     private int age;
-    private double food_level;
-    private double poop_level;
-    private String species_name;
+    private double foodLevel;
 
-    public Animal(String name, int age, double food_level, double poop_level, String species_name){
+
+    public Animal(String name, String species, int age, double foodLevel){
         this.name = name;
+        this.species = species;
         this.age = age;
-        this.food_level = food_level;
-        this.poop_level = poop_level;
-        this.species_name = species_name;
+        this.foodLevel = foodLevel;
 
     }
 
@@ -24,43 +23,49 @@ public class Animal {
         return this.name;
     }
 
+    public String getSpecies(){
+        return this.species;
+    }
+
     public int getAge(){
         return this.age;
     }
 
-    public double getFood_level(){
-        return this.food_level;
+    public double getFoodLevel(){
+        return this.foodLevel;
     }
 
-    public double getPoop_level(){
-        return this.poop_level;
-    }
 
     public void setName(String name){
         this.name = name;
+    }
+
+    public void setSpecies(String species){
+        this.species = species;
     }
 
     public void setAge(int age){
         this.age = age;
     }
 
-    public void setFood_level(double food_level){
-        this.food_level = food_level;
+    public void setFoodlevel(double foodLevel){
+        this.foodLevel = foodLevel;
     }
 
-    public String getSpeciesName(){
-        return this.species_name;
-    }
+//    public void poo() {
+//        this.foodLevel -= 10;
+//    }
+//
+//    public void eat() {
+//        this.foodLevel += 10;
+//    }
 
-    public void setSpeciesName(String species_name){
-        this.species_name = species_name;
-    }
 
-    public void feedAnimal(){
-        // how am I going to lower these levels without hard coding stuff?
-        this.food_level = food_level + 10.00;
+    // public void feedAnimal(){
+        // how am I going to lower these levels without hard coding stuff? Use an 'eat' method which will affect foodLevel
+        // this.foodLevel = foodLevel + 10.00;
 
-    }
+
 
 
 

@@ -17,7 +17,7 @@ public class EnclosureTest {
     @Before
     public void before(){
 
-        animal = new Animal("Nessie", 10000000, 90.00, 10.00, "Loch Monster");
+//        animal = new Animal("Nessie", 10000000, 90.00, 10.00, "Loch Monster");
         enclosure1 = new Enclosure("Aquarium", new ArrayList<Animal>());
 
     }

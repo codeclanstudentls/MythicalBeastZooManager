@@ -31,33 +31,33 @@ public class WalkingMonsterTest {
        assertEquals(1, walkingMonster.getAge());
     }
 
-    @Test 
+    @Test
     public void canGetFoodLevelTest(){
-       assertEquals(50.00, 0.01, walkingMonster.getFoodLevel());
+        assertEquals(50.00, 0.01, walkingMonster.getFoodLevel());
     }
 
-    @Test 
-    public void canSetFoodLevelTest(){ 
-        walkingMonster.setFoodlevel(10.00); 
-        assertEquals(10.00, 0.01, walkingMonster.getFoodLevel()); 
-    }   
+    @Test
+    public void canSetNameTest(){
+        walkingMonster.setName("Fluffy");
+        assertEquals("Tribble", walkingMonster.getName());
+    }
 
-    @Test 
-    public void canSetNameTest(){ 
-        walkingMonster.setName("Fluffy"); 
-        assertEquals("Fluffy", walkingMonster.getName()); 
-    }  
+    @Test
+    public void canSetSpecies(){
+        walkingMonster.setSpecies("Tribble");
+        assertEquals("Tribble", walkingMonster.getSpecies());
+    }
 
-    @Test 
-    public void canSetSpeciesTest(){ 
-        walkingMonster.setSpecies("Tribble"); 
-        assertEquals("Tribble", walkingMonster.getSpecies()); 
-    }  
+    @Test
+    public void canSetAgeTest(){
+        walkingMonster.setAge(3);
+        assertEquals(3, walkingMonster.getAge());
+    }
 
-    @Test 
-    public void canSetAgeTest(){ 
-        walkingMonster.setAge(5); 
-        assertEquals(5, walkingMonster.getAge()); 
-    } 
+    @Test
+    public void canSetFoodLevelsTest(){
+        walkingMonster.setFoodlevel(20.00);
+        assertEquals(20.00, 0.01, walkingMonster.getFoodLevel());
+    }
 
 }

@@ -14,7 +14,7 @@ public class WaterMonsterTest {
 
     @Before
     public void before() {
-        waterMonster = new waterMonster("Nessie", "Lake Monster", 10000000, 40.00);
+        waterMonster = new WaterMonster("Nessie", "Lake Monster", 10000000, 40.00);
     }
 
     @Test
@@ -39,26 +39,26 @@ public class WaterMonsterTest {
 
     @Test
     public void canSetNameTest(){
-        waterMonster.setName("Peter");
-        assertEquals("Peter", flyingMonster.getName());
+        waterMonster.setName("Nessie");
+        assertEquals("Nessie", waterMonster.getName());
     }
 
     @Test
     public void canSetSpecies(){
-        flyingMonster.setSpecies("Griffin");
-        assertEquals("Griffin", flyingMonster.getSpecies());
+        waterMonster.setSpecies("Lake Monster");
+        assertEquals("Nessie", waterMonster.getSpecies());
     }
 
     @Test
     public void canSetAgeTest(){
-        flyingMonster.setAge(32);
-        assertEquals(32, flyingMonster.getAge());
+        waterMonster.setAge(2000000);
+        assertEquals(2000000, waterMonster.getAge());
     }
 
     @Test
     public void canSetFoodLevelsTest(){
-        flyingMonster.setFoodlevel(50.00);
-        assertEquals(50.00, 0.01, flyingMonster.getFoodLevel());
+        waterMonster.setFoodlevel(20.00);
+        assertEquals(20.00, 0.01, waterMonster.getFoodLevel());
     }
 
 

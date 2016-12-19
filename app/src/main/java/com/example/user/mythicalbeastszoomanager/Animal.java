@@ -57,10 +57,9 @@ public abstract class Animal {
         return "Chomp chomp! I love eating " + food ;
     }
 
-    public String animalPooping(){
+    public String animalPooping() {
         this.foodLevel = foodLevel - 10.00;
-        return "Pew! What have I been eating?";
+        return "What goes in must come out!";
     }
-
-
+    
 }

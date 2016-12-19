@@ -52,22 +52,15 @@ public abstract class Animal {
         this.foodLevel = foodLevel;
     }
 
-//    public void poo() {
-//        this.foodLevel -= 10;
-//    }
-//
-//    public void eat() {
-//        this.foodLevel += 10;
-//    }
+    public String animalEating(String food){
+        this.foodLevel = foodLevel + 10.00;
+        return "Chomp chomp! I love eating " + food ;
+    }
 
-
-    // public void feedAnimal(){
-        // how am I going to lower these levels without hard coding stuff? Use an 'eat' method which will affect foodLevel
-        // this.foodLevel = foodLevel + 10.00;
-
-
-
-
+    public String animalPooping(){
+        this.foodLevel = foodLevel - 10.00;
+        return "Pew! What have I been eating?";
+    }
 
 
 }

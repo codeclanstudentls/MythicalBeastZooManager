@@ -15,10 +15,5 @@ public class WaterMonster extends Animal implements Swimmable {
     }
 
 
-
 }
 
-// , int age, double food_level, double poop_level
-// super(age);
-// super(food_level);
-// super(poop_level);

@@ -39,7 +39,7 @@ public class WalkingMonsterTest {
     @Test
     public void canSetNameTest(){
         walkingMonster.setName("Fluffy");
-        assertEquals("Tribble", walkingMonster.getName());
+        assertEquals("Fluffy", walkingMonster.getName());
     }
 
     @Test
@@ -58,6 +58,16 @@ public class WalkingMonsterTest {
     public void canSetFoodLevelsTest(){
         walkingMonster.setFoodlevel(20.00);
         assertEquals(20.00, 0.01, walkingMonster.getFoodLevel());
+    }
+
+    @Test
+    public void animalIsEatingTest(){
+        walkingMonster.animalEating("Space Dust");
+    }
+
+    @Test
+    public void animalCanPoopTest(){
+        walkingMonster.animalPooping();
     }
 
 }

@@ -10,9 +10,9 @@ import java.util.Collections;
 public class Enclosure {
     private String name;
     private ArrayList<Animal> animals;
-    //private String type;
+    // private String type;
 
-    public Enclosure(String name, ArrayList<Animal> animals) {
+    public Enclosure(String name, ArrayList<Animal> animals, ) {
         this.name = name;
         this.animals = animals;
     }
@@ -51,6 +51,14 @@ public class Enclosure {
 
         }return null;
     }
+
+    public String waterMonstersInAquarium (String waterMonster){
+        for (Animal : animals){
+            if (animal.)
+        }
+    }
+
+
 
 }
 

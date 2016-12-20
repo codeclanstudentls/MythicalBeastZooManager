@@ -6,15 +6,22 @@ import java.util.ArrayList;
  * Created by user on 20/12/2016.
  */
 public class Ticket {
-    private Visitor[] visitors;
 
-    public Ticket(Visitor[] visitors){
-        this.visitors = visitors;
+    private double price;
+
+    public Ticket(double price) {
+        this.price = price;
     }
 
-    public (){
+    public double getPrice(){
+        return this.price;
 
     }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
+
 
 
 }

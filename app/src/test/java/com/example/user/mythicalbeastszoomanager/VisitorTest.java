@@ -15,8 +15,17 @@ public class VisitorTest {
         visitor = new Visitor(1);
     }
 
+    @Test
     public void visitorNumberTest(){
-//        visitor.setNumber(1);
+
         assertEquals(1, visitor.getNumber(1));
+    }
+
+    @Test
+    public void setVisitorNumberTest(){
+        visitor.setNumber(1);
+        assertEquals(1, visitor.getNumber(1));
+
+
     }
 }

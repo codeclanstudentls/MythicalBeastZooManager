@@ -70,4 +70,18 @@ public class WalkingMonsterTest {
         walkingMonster.animalPooping();
     }
 
+    @Test
+    public void animalIsSellable(){
+
+        walkingMonster.getAge();
+
+        if (walkingMonster.getAge() <= 1) {System.out.println ("You can buy this baby monster for your zoo");
+        }
+
+        else {System.out.println("Sorry this animal is not for sale");
+        }
+
+    }
+
+
 }

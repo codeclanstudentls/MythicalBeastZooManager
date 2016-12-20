@@ -10,10 +10,12 @@ public class Zoo {
 
     private String name;
     private ArrayList<Enclosure> enclosures;
+    private ArrayList<Visitor> visitors;
 
-    public Zoo(String name, ArrayList<Enclosure> enclosures){
+    public Zoo(String name, ArrayList<Enclosure> enclosures, ArrayList<Visitor> visitors){
         this.name = name;
         this.enclosures = enclosures;
+        this.visitors = visitors;
     }
 
     public String getName(){
@@ -34,6 +36,14 @@ public class Zoo {
     public int getNumberOfEnclosuresInZoo(){
 
         return enclosures.size();
+    }
+
+    public void addVisitorToZoo(Visitor visitor){
+        visitors.add(visitor);
+    }
+
+    public int numberOfVisitors(){
+        return visitors.size();
     }
 
 

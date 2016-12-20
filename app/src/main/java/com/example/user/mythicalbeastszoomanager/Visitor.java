@@ -4,7 +4,9 @@ package com.example.user.mythicalbeastszoomanager;
  * Created by user on 20/12/2016.
  */
 public class Visitor {
-    int visitorNumber;
+
+    private int visitorNumber;
+
 
     public Visitor(int visitorNumber){
         this.visitorNumber = visitorNumber;

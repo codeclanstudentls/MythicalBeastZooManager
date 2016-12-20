@@ -18,7 +18,7 @@ public class ZooTest {
     public void before() {
 
 //        enclosure1 = new Enclosure("Aquarium", new ArrayList<Animal>());
-        zoo = new Zoo("Mysterious and Mythical Beasts Emporium", new ArrayList<Enclosure>());
+        zoo = new Zoo("Mysterious and Mythical Beasts Emporium", new ArrayList<Enclosure>(), new ArrayList<Visitor>());
     }
 
     @Test
@@ -34,6 +34,7 @@ public class ZooTest {
 
     @Test
     public void canAddEnclosureToZooTest(){
+
 
     }
 

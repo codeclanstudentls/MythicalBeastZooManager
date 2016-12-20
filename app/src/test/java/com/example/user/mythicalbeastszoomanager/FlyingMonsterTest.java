@@ -59,6 +59,19 @@ public class FlyingMonsterTest {
         assertEquals(50.00, 0.01, flyingMonster.getFoodLevel());
     }
 
+    @Test
+    public void animalIsSellable(){
+
+        flyingMonster.getAge();
+
+        if (flyingMonster.getAge() <= 1) {System.out.println ("You can buy this baby monster for your zoo");
+        }
+
+        else {System.out.println("Sorry this animal is not for sale");
+        }
+
+    }
+
 
 
 }

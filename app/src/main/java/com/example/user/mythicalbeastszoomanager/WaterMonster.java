@@ -11,7 +11,7 @@ public class WaterMonster extends Animal implements Swimmable {
     }
 
     public String swim(){
-        return "Splish splash swimmy swim swim";
+        return "Splish splash swimmy-swim-swim";
     }
 
 

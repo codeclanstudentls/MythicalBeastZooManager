@@ -61,5 +61,6 @@ public abstract class Animal {
         this.foodLevel = foodLevel - 10.00;
         return "What goes in must come out!";
     }
-    
+
+
 }

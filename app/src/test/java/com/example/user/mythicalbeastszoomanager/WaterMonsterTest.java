@@ -61,6 +61,19 @@ public class WaterMonsterTest {
         assertEquals(20.00, 0.01, waterMonster.getFoodLevel());
     }
 
+    @Test
+    public void animalIsSellable(){
+
+        waterMonster.getAge();
+
+        if (waterMonster.getAge() <= 1) {System.out.println ("You can buy this baby monster for your zoo");
+        }
+
+        else {System.out.println("Sorry this animal is not for sale");
+        }
+
+    }
+
 
 
 }

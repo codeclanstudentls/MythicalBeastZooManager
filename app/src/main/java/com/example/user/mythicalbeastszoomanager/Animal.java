@@ -62,5 +62,16 @@ public abstract class Animal {
         return "What goes in must come out!";
     }
 
+    public boolean animalIsSellable() {
 
+        if (this.age <= 1) {
+            System.out.println("You can buy this baby monster for your zoo");
+            return true;
+        }
+
+        else {
+            System.out.println("Sorry this animal is not for sale");
+            return false;
+        }
+    }
 }

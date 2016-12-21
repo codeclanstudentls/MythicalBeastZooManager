@@ -60,15 +60,22 @@ public class FlyingMonsterTest {
     }
 
     @Test
-    public void animalIsSellable(){
+    public void animalIsSellableTestFalse(){
 
-        flyingMonster.getAge();
+        flyingMonster.setAge(3);
+        assertEquals(false, flyingMonster.animalIsSellable());
 
-        if (flyingMonster.getAge() <= 1) {System.out.println ("You can buy this baby monster for your zoo");
-        }
 
-        else {System.out.println("Sorry this animal is not for sale");
-        }
+    }
+
+    @Test
+    public void animalIsSellableTestTrue(){
+
+        flyingMonster.setAge(1);
+
+        assertEquals(true, flyingMonster.animalIsSellable());
+
+
 
     }
 

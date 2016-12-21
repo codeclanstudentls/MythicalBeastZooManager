@@ -70,18 +70,23 @@ public class WalkingMonsterTest {
         walkingMonster.animalPooping();
     }
 
+
     @Test
-    public void animalIsSellable(){
+    public void animalIsSellableTestFalse(){
 
-        walkingMonster.getAge();
+        walkingMonster.setAge(3);
+        assertEquals(false, walkingMonster.animalIsSellable());
 
-        if (walkingMonster.getAge() <= 1) {System.out.println ("You can buy this baby monster for your zoo");
-        }
-
-        else {System.out.println("Sorry this animal is not for sale");
-        }
 
     }
 
+    @Test
+    public void animalIsSellableTestTrue(){
+
+        walkingMonster.setAge(1);
+
+        assertEquals(true, walkingMonster.animalIsSellable());
+
+    }
 
 }

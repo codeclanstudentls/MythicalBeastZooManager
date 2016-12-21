@@ -34,10 +34,11 @@ public class AviaryTest {
         assertEquals(0, aviary.numberOfAnimals());
     }
 
-    @Test
-    public void canCountNumberOfFlyers(){
-
-    }
+//    @Test
+//    public void canCountNumberOfFlyersTest(){
+//        aviary.addFlyableToAviary(flyingMonster);
+//        assertEquals(1, aviary.numberOfAnimals());
+//    }
 
 
 }

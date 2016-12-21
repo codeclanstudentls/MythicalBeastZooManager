@@ -1,5 +1,6 @@
 package com.example.user.mythicalbeastszoomanager;
 
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -11,6 +12,7 @@ public class Zoo {
     private String name;
     private ArrayList<Enclosure> enclosures;
     private ArrayList<Visitor> visitors;
+
 
     public Zoo(String name, ArrayList<Enclosure> enclosures, ArrayList<Visitor> visitors){
         this.name = name;

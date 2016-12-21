@@ -35,5 +35,25 @@ public class AquariumTest  {
         assertEquals(0, aquarium.numberOfAnimals());
     }
 
+    @Test
+    public void animalIsSellableTestFalse(){
+
+        waterMonster.setAge(100000);
+        assertEquals(false, waterMonster.animalIsSellable());
+
+
+    }
+
+    @Test
+    public void animalIsSellableTestTrue(){
+
+        waterMonster.setAge(1);
+
+        assertEquals(true, waterMonster.animalIsSellable());
+
+
+
+    }
+
 
 }

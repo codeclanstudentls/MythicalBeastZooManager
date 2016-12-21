@@ -11,14 +11,16 @@ import static org.junit.Assert.*;
 public class ZooTest {
 
         Zoo zoo;
-      //  Enclosure enclosure1;
+        Visitor visitor;
+        Enclosure enclosure;
 
 
     @Before
     public void before() {
 
-//        enclosure1 = new Enclosure("Aquarium", new ArrayList<Animal>());
+//        enclosure = new Enclosure("Aquarium", new ArrayList<Animal>());
         zoo = new Zoo("Mysterious and Mythical Beasts Emporium", new ArrayList<Enclosure>(), new ArrayList<Visitor>());
+        visitor = new Visitor(1);
     }
 
     @Test
@@ -34,6 +36,29 @@ public class ZooTest {
 
     @Test
     public void canAddEnclosureToZooTest(){
+        zoo.addEnclosureToZoo(enclosure);
+        assertEquals(1, zoo.getNumberOfEnclosuresInZoo());
+
+    }
+
+    @Test
+    public void canRemoveEnclosureTest(){
+        zoo.addEnclosureToZoo(enclosure);
+        zoo.removeEnclosureFromZoo();
+        assertEquals(0, zoo.getNumberOfEnclosuresInZoo());
+    }
+
+    @Test
+    public void canAddVisitorToZooTest(){
+        zoo.addVisitorToZoo(visitor);
+        assertEquals(1, zoo.numberOfVisitors());
+    }
+
+    @Test
+    public void canRemoveVisitorTest(){
+        zoo.addVisitorToZoo(visitor);
+        zoo.removeVisitorFromZoo(visitor);
+        assertEquals(0, zoo.numberOfVisitors());
 
 
     }

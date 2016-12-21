@@ -38,12 +38,20 @@ public class Zoo {
         return enclosures.size();
     }
 
+    public void removeEnclosureFromZoo(){
+        enclosures.remove(0);
+    }
+
     public void addVisitorToZoo(Visitor visitor){
         visitors.add(visitor);
     }
 
     public int numberOfVisitors(){
         return visitors.size();
+    }
+
+    public void removeVisitorFromZoo(Visitor visitor){
+        visitors.remove(0);
     }
 
 
